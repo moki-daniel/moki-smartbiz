@@ -109,8 +109,8 @@ body {
   width: 100%;
   /*--animation-name: animate;
   animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
+  animation-timing-function: ease-in-out;--*/
+  /*-animation-delay: 0s;
   animation-iteration-count: 2;
   animation-direction: reverse;
   animation-fill-mode: normal;
@@ -118,34 +118,27 @@ body {
 
   /*--background-position: 100% 0;--*/
   /*--background-repeat: repeat-x;--*/
-  animation: animate 80s linear infinite;
+  animation: animate 50s linear infinite;
 }
 @keyframes animate {
-  0%,
-  5% {
+  0% {
     background: url("./bg1.jpeg");
   }
-  15%,
-  20% {
+  15% {
     background: url("./shoes.jpeg");
   }
-  30%,
-  35% {
+  30% {
     background: url("./bestphone.jpeg");
   }
-  45%,
-  50% {
+  45% {
     background: url("./bestcar.jpeg");
   }
-  60%,
-  65% {
+  60% {
     background: url("./veges.jpeg");
   }
-  75%,
-  80% {
+  75% {
     background: url("./bg2.jpeg");
   }
-  95%,
   100% {
     background: url("./besthouse.jpeg");
   }
@@ -181,75 +174,128 @@ body {
 /*-------------End of Background Image-------------*/
 
 /*-------------Featured products-------------*/
-.ft-pdts {
-  padding: 4rem 0;
-}
-.section-title h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
-.ft-pdts-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  /*--grid-template-columns: 1fr 1fr 1fr 1fr;--*/
-  /*--grid-template-columns: repeat(4, 1fr);--*/
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
-}
-.img-container {
-  position: relative;
-  overflow: hidden;
-}
-.cart-btntwo {
-  position: absolute;
-  top: 70%;
-  right: 0;
-  background: var(--primaryColor);
-  border: none;
-  text-transform: uppercase;
-  padding: 0.5rem 0.75rem;
-  letter-spacing: var(--mainSpacing);
-  font-weight: bold;
-  transition: var(--mainTransition);
-  transform: translatex(101%);
-  cursor: pointer;
-}
-.cart-btntwo:hover {
-  color: var(--mainWhite);
-}
-.fa-shopping-cart {
-  margin-right: 0.5rem;
-}
-.img-container:hover .cart-btntwo {
-  transform: translatex(0);
-}
-.prdt-img {
-  display: block;
+.container
+{
   width: 100%;
-  min-height: 12rem;
-  transition: var(--mainTransition);
+  margin-top: 3%;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
-.img-container:hover .prdt-img {
-  opacity: 0.5;
-}
-.prdt h3 {
-  text-transform: capitalize;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  letter-spacing: var(--mainSpacing);
+.container h2
+{
+  margin-left: 35%;
+  background: #0062cc;
+  color: #fff;
+  width: 400px;
+  font-size: 24px;
+  padding: 5px;
+  height: 50px;
   text-align: center;
 }
-.prdt h4 {
-  margin-top: 0.7rem;
-  letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
-  text-align: center;
-}
+/*.container h2::after
+{
+  content:'';
+  border-top: 40px solid #0062cc;
+  border-right: 40px solid transparent;
+  position: relative;
+  left: 48px;
+  top: 34px;
+}*/
 
+.row
+{
+margin-left: 1%;
+margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+/*padding: 0px;
+padding: 0 -8px;*/
+padding: 0px 10px 10px 0px;
+}
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+.row img
+ {
+   margin-top: 30px;
+   position: relative;
+   float: left;
+   width: 260px;
+  height: 260px;
+    /*height: auto;*/
+   background-position: 50% 50%;
+   background repeat: no-repeat;
+   background-size: cover;
+  margin: 0 28px;
+  /* max-width: 100%;
+  overflow: hidden;
+  clear: both;
+  display: table;*/
+  flex-basis: 25%;
+}
+/*.pimg, */.product-bottom h3, .product-bottom h5,.product-bottom, .overlay
+{
+   margin-left: 15%;
+   
+}
+.product-bottom h5
+{
+  margin-bottom: 30px;
+}
+/*.pimg
+{
+  width: 90%;
+  height: 90%;
+}*/
+.product-bottom .fa
+{
+color: #28a745;
+font-size: 15px;
+}
+.product-bottom h3
+{
+  font-size: 15px;
+  font-weight: bold;
+}
+.product-bottom h5
+{
+  font-size: 15px;
+  padding-bottom: bold;
+}
+/*.overlay
+{
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0px;
+  width: 7px;
+}
+.product-top:hover .overlay
+{
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5%;
+}
+.overlay .fa
+{
+  cursor: pointer;
+  background-color: blue;
+  color: red;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding: 7px;
+  margin: 5%;
+  margin-bottom: 5%;
+}
+.overlay .btn-secondary
+{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
+}*/
 /*--------------End of featured products-----*/
