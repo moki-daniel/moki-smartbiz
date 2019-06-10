@@ -174,15 +174,13 @@ body {
 /*-------------End of Background Image-------------*/
 
 /*-------------Featured products-------------*/
-.container
-{
+.container {
   width: 100%;
   margin-top: 3%;
   font-family: sans-serif;
   letter-spacing: 1px;
 }
-.container h2
-{
+.container h2 {
   margin-left: 35%;
   background: #0062cc;
   color: #fff;
@@ -191,6 +189,7 @@ body {
   padding: 5px;
   height: 50px;
   text-align: center;
+  margin-bottom: 15px;
 }
 /*.container h2::after
 {
@@ -202,32 +201,30 @@ body {
   top: 34px;
 }*/
 
-.row
-{
-margin-left: 1%;
-margin-top: 30px;
-display: flex;
-flex-wrap: wrap;
-/*padding: 0px;
+.row {
+  margin-left: 1%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  /*padding: 0px;
 padding: 0 -8px;*/
-padding: 0px 10px 10px 0px;
+  padding: 0px 10px 10px 0px;
 }
 /*.row:after {
   content: "";
   display: table;
   clear: both;
 }*/
-.row img
- {
-   margin-top: 30px;
-   position: relative;
-   float: left;
-   width: 260px;
+.row img {
+  margin-top: 30px;
+  position: relative;
+  float: left;
+  width: 260px;
   height: 260px;
-    /*height: auto;*/
-   background-position: 50% 50%;
-   background repeat: no-repeat;
-   background-size: cover;
+  /*height: auto;*/
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 28px;
   /* max-width: 100%;
   overflow: hidden;
@@ -235,32 +232,35 @@ padding: 0px 10px 10px 0px;
   display: table;*/
   flex-basis: 25%;
 }
-/*.pimg, */.product-bottom h3, .product-bottom h5,.product-bottom, .overlay
-{
-   margin-left: 15%;
-   
+/*.pimg, */
+.product-bottom h3,
+.product-bottom h5,
+.product-bottom,
+.overlay {
+  margin-left: 15%;
 }
-.product-bottom h5
-{
-  margin-bottom: 30px;
+.product-bottom h5 {
+  margin-bottom: 10px;
 }
-/*.pimg
-{
-  width: 90%;
-  height: 90%;
-}*/
-.product-bottom .fa
-{
-color: #28a745;
-font-size: 15px;
+.container h4 {
+  margin-left: 35%;
+  background: green;
+  color: #fff;
+  width: 400px;
+  font-size: 20px;
+  padding: 5px;
+  height: 50px;
+  text-align: center;
 }
-.product-bottom h3
-{
+.product-bottom .fa {
+  color: #28a745;
+  font-size: 15px;
+}
+.product-bottom h3 {
   font-size: 15px;
   font-weight: bold;
 }
-.product-bottom h5
-{
+.product-bottom h5 {
   font-size: 15px;
   padding-bottom: bold;
 }
