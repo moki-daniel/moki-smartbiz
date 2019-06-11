@@ -302,11 +302,24 @@ padding: 0 -8px;*/
   box-shadow: none !important;
 }*/
 /*--------------End of featured products-----*/
+
+/*--------------Footer-----*/
+
 .footer {
   width: 100%;
   height: auto;
   background: #f5f5f5;
   float: left;
+}
+.footer-h2 {
+  margin-left: 5%;
+  background: #0062cc;
+  color: #fff;
+  width: 200px;
+  font-size: 15px;
+  padding: 3px;
+  height: 20px;
+  margin-bottom: 15px;
 }
 .footer_sub {
   width: 25%;
