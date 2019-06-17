@@ -153,35 +153,30 @@ body {
 /*---My code on smart-phone Screens---*/
 /*-----------------------------------*/
 
-/*@media screen and (min-width: 480px) {
-  navbar-logo img.responsive {
-    width: 0.25rem;
-  }
-}
-img.responsive {
-  height: auto;
-}*/
-
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .navbar {
-    position: sticky;
-    top: 0;
-    height: 5rem;
-    width: 100%;
+    background-color: rgb(146, 145, 145);
+    max-width: 480px;
+    height: 70px;
+    margin: 0;
     display: flex;
+    padding: 0.1em;
     align-items: center;
-    background: rgb(250, 248, 248);
-    z-index: 1;
+    position: relative;
+    transform: translate(-50% 50%);
   }
-  .navbar-center {
-    width: 100%;
-    max-width: 73.125rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.5rem;
+  .nav-icon-search-onphone {
+    margin-left: 35%;
   }
+  .nav-icon-onphone {
+    margin-left: 10%;
+  }
+  .cart-btn-onphone {
+    position: relative;
+    cursor: pointer;
+    margin-left: 0.5%;
+  }
+
   .navbar-p-onphone {
     color: green;
     font-weight: bold;
@@ -189,10 +184,11 @@ img.responsive {
     height: auto;
     text-align: center;
     margin-left: 1%;
+    font-size: 80%;
   }
   .navbar-logo-onphone img {
-    max-width: 9.4rem;
-    height: 10rem;
+    max-width: 10rem;
+    height: 12rem;
   }
   .navbar-p,
   .navbar-logo,
@@ -201,18 +197,16 @@ img.responsive {
   .nav-links,
   .nav-links a,
   .nav-icon,
-  .nav-icon-search {
+  .nav-icon-search,
+  .cart-btn,
+  .cart-items {
     display: none;
   }
 
   .nav-icon-cart {
     font-size: 1.5rem;
   }
-  .cart-btn {
-    position: relative;
-    cursor: pointer;
-  }
-  .cart-items {
+  .cart-items-onphone {
     position: absolute;
     top: -0.5rem;
     right: -0.5rem;
@@ -222,12 +216,17 @@ img.responsive {
     color: var(--mainWhite);
   }
 }
+/*@media only screen and (min-width: 480px) {
+  .navbar {
+    flex-direction: row;
+  }
+}*/
 /*-------------------------------*/
-/*---My code On Big  Screens---*/
+/*---On desktop---*/
 /*------------------------------*/
 
 /*-------------Nav-bar-------------*/
-@media (min-width: 1024px) {
+@media only screen and (min-width: 911px) {
   .navbar {
     position: sticky;
     top: 0;
@@ -281,7 +280,9 @@ img.responsive {
     justify-content: space-between;
     color: #0000ff;
   }
-  .phone-icons {
+  .phone-icons,
+  .cart-btn-onphone,
+  .cart-items-onphone {
     display: none;
   }
   .nav-icon {
