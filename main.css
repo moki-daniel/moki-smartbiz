@@ -154,17 +154,6 @@ body {
 /*-----------------------------------*/
 
 @media only screen and (max-width: 480px) {
-  /*.navbar {
-    background-color: rgb(146, 145, 145);
-    max-width: 480px;
-    height: 70px;
-    margin: 0;
-    display: flex;
-    padding: 0.1em;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-  }*/
   .navbar {
     background-color: rgb(226, 224, 224);
     max-width: 30rem;
@@ -295,6 +284,142 @@ body {
   .banner-btn:hover {
     background: transparent;
     color: var(--primaryColor);
+  }
+  /*-------------Featured products on 480px width-------------*/
+  .container {
+    width: 100%;
+    margin-top: 3%;
+    font-family: sans-serif;
+    letter-spacing: 0.0625rem;
+  }
+  .container h2 {
+    margin-left: 30%;
+    background: #0062cc;
+    color: #fff;
+    width: 12rem;
+    font-size: 1rem;
+    padding: 0.3125rem;
+    height: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .row {
+    margin-left: 5%;
+    margin-top: 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px 10px 0px;
+  }
+
+  .row img {
+    margin-top: 1rem;
+    position: relative;
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 28px;
+    flex-basis: 25%;
+  }
+
+  .product-bottom h3,
+  .product-bottom h5,
+  .product-bottom,
+  .overlay {
+    margin-left: 15%;
+  }
+  .overlay {
+    font-size: 1rem;
+  }
+  .product-bottom h5 {
+    margin-bottom: 0.005rem;
+  }
+  .container h4 {
+    margin-left: 30%;
+    background: green;
+    color: #fff;
+    width: 12rem;
+    font-size: 1rem;
+    padding: 0.15625rem;
+    height: 1.5625rem;
+    text-align: center;
+  }
+  .product-bottom .fa {
+    color: #28a745;
+    font-size: 0.9375rem;
+  }
+  .product-bottom h3 {
+    font-size: 0.9375rem;
+    font-weight: bold;
+  }
+  .product-bottom h5 {
+    font-size: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    font-weight: bold;
+  }
+  /*-----------------------------------------------*/
+  /*Footer Section on 480px width*/
+  /*-----------------------------------------------*/
+
+  footer {
+    background-color: #043df7;
+    height: auto;
+  }
+  footer h4 {
+    color: rgb(247, 8, 8);
+    font-size: 1.5625rem;
+    margin-bottom: 0.625rem;
+    display: inline-block;
+  }
+  .important_links ul,
+  .Social_links ul {
+    list-style: none;
+  }
+  .important_links,
+  .Social_links,
+  .Copyright {
+    display: inline-block;
+  }
+
+  .important_links li a,
+  .Social_links li a {
+    text-decoration: none;
+    color: rgb(252, 249, 249);
+  }
+  .important_links li a:hover,
+  .Social_links li a:hover {
+    color: rgb(177, 70, 70);
+    text-decoration: underline;
+  }
+  .important_links {
+    margin-left: 7%;
+  }
+
+  .Social_links {
+    margin-left: 10%;
+  }
+  .Copyright {
+    margin-left: 7%;
+    float: right;
+  }
+  .Copyright p {
+    color: rgb(255, 255, 255);
+  }
+
+  .Copyright img {
+    width: 11.9rem;
+    height: 13.75rem;
+  }
+  #p1 {
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+    background-color: rgb(211, 211, 211);
+    margin-top: 1.7rem;
+    font-size: 1.2rem;
+    height: 1.75rem;
   }
 }
 /*@media only screen and (min-width: 480px) {
