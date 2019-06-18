@@ -233,6 +233,69 @@ body {
     border-radius: 30%;
     color: var(--mainWhite);
   }
+  .bgimg {
+    height: 70vh;
+    background: url("./bg1.jpeg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    animation: animate 50s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background: url("./bg1.jpeg");
+    }
+    15% {
+      background: url("./shoes.jpeg");
+    }
+    30% {
+      background: url("./bestphone.jpeg");
+    }
+    45% {
+      background: url("./bestcar.jpeg");
+    }
+    60% {
+      background: url("./veges.jpeg");
+    }
+    75% {
+      background: url("./bg2.jpeg");
+    }
+    100% {
+      background: url("./besthouse.jpeg");
+    }
+  }
+  .banner {
+    text-align: center;
+    background: white;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-left: 6%;
+  }
+  .banner-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 1rem;
+  }
+  .banner-btn {
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 0.125rem;
+    background: var(primaryColor);
+    color: var(--mainBlack);
+    border: 0.0625rem solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+  }
+  .banner-btn:hover {
+    background: transparent;
+    color: var(--primaryColor);
+  }
 }
 /*@media only screen and (min-width: 480px) {
   .navbar {
