@@ -206,10 +206,12 @@ body {
   .nav-icon,
   .nav-icon-search,
   .cart-btn,
-  .cart-items {
+  .cart-items,
+  .Copyright,
+  .Copyright p,
+  .Copyright img {
     display: none;
   }
-
   .nav-icon-cart {
     font-size: 1.5rem;
   }
@@ -332,7 +334,7 @@ body {
     margin-left: 15%;
   }
   .overlay {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .product-bottom h5 {
     margin-bottom: 0.005rem;
@@ -365,22 +367,25 @@ body {
   /*-----------------------------------------------*/
 
   footer {
-    background-color: #043df7;
+    background-color: #023cf8;
     height: auto;
   }
   footer h4 {
-    color: rgb(247, 8, 8);
-    font-size: 1.5625rem;
+    color: rgb(248, 6, 6);
+    font-size: 1.2rem;
     margin-bottom: 0.625rem;
-    display: inline-block;
+    float: left;
+    margin-top: 0.8rem;
+    font-weight: bold;
+
+    /*display: inline-block;*/
   }
   .important_links ul,
   .Social_links ul {
     list-style: none;
   }
   .important_links,
-  .Social_links,
-  .Copyright {
+  .Social_links {
     display: inline-block;
   }
 
@@ -399,34 +404,61 @@ body {
   }
 
   .Social_links {
-    margin-left: 10%;
+    margin-left: 15%;
   }
-  .Copyright {
-    margin-left: 7%;
-    float: right;
-  }
-  .Copyright p {
-    color: rgb(255, 255, 255);
-  }
-
-  .Copyright img {
-    width: 11.9rem;
-    height: 13.75rem;
-  }
-  #p1 {
+  /*#p1 {
     color: rgb(0, 128, 0);
     font-weight: bold;
     background-color: rgb(211, 211, 211);
-    margin-top: 1.7rem;
-    font-size: 1.2rem;
-    height: 1.75rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    height: 1.5rem;
+    float: left;
+    margin-right: 30%;
+  }*/
+  .footer-p-on-phone,
+  .Copyright-on-phone {
+    display: inline-block;
+  }
+  .Copyright-on-phone {
+    /*margin-left: 10%;*/
+  }
+  .logo-on-phone img,
+  #p-on-phone {
+    display: block;
+  }
+  .logo-on-phone img {
+    width: 10rem;
+    height: 12rem;
+    margin-top: -15%;
+    margin-left: -1%;
+  }
+  #p-on-phone {
+    color: green;
+    background-color: grey;
+    padding: 0.9375rem;
+    height: 1.875rem;
+    float: left;
+    width: 100%;
+    margin-top: -35%;
+    font-weight: bold;
+    margin-left: -5%;
+  }
+  .Copyright-on-phone h4,
+  .Copyright-on-phone p {
+    display: block;
+    margin-left: 10%;
+    width: 11.5rem;
+  }
+  .Copyright-on-phone h4 {
+    margin-top: 1.5rem;
+    /*margin-left: 35%;*/
+  }
+  .Copyright-on-phone p {
+    color: white;
   }
 }
-/*@media only screen and (min-width: 480px) {
-  .navbar {
-    flex-direction: row;
-  }
-}*/
+
 /*-------------------------------*/
 /*---On desktop---*/
 /*------------------------------*/
@@ -488,7 +520,9 @@ body {
   }
   .phone-icons,
   .cart-btn-onphone,
-  .cart-items-onphone {
+  .cart-items-onphone,
+  .footer-logo-on-phone,
+  .Copyright-on-phone {
     display: none;
   }
   .nav-icon {
